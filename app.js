@@ -1,15 +1,14 @@
-const btn2 = document.getElementById("decision1").style.display = "none";
 document.getElementById("decision2").style.display = "none";
 document.getElementById("decision3").style.display = "none";
 let scene = 0;
-document.getElementById("decision0").onclick = () => {
+
+document.getElementById("decision1").onclick = () => {
     gameInit(1)
 }
 
 const gameInit = (scene) => {
     if (scene === 1) {
         // Show/hide buttons
-        document.getElementById("decision0").style.display = "none";
         document.getElementById("decision1").style.display = "block";
         document.getElementById("decision2").style.display = "block";
         document.getElementById("decision3").style.display = "block";
@@ -26,7 +25,6 @@ const gameInit = (scene) => {
         document.getElementById("decision3").onclick = () => { gameInit(4); }
     } else if (scene === 2) {
         // Show/hide buttons
-        document.getElementById("decision0").style.display = "none";
         document.getElementById("decision1").style.display = "block";
         document.getElementById("decision2").style.display = "block";
         document.getElementById("decision3").style.display = "none";
@@ -41,7 +39,6 @@ const gameInit = (scene) => {
         document.getElementById("decision2").onclick = () => { gameInit(100); }
     } else if (scene === 3) {
         // Show/hide buttons
-        document.getElementById("decision0").style.display = "none";
         document.getElementById("decision1").style.display = "block";
         document.getElementById("decision2").style.display = "block";
         document.getElementById("decision3").style.display = "none";
@@ -51,14 +48,12 @@ const gameInit = (scene) => {
         // change button text  
         document.getElementById("decision1").textContent = "Go on an adventure!";
         document.getElementById("decision2").textContent = "Turn the wizzard down";
-        document.getElementById("decision3").textContent = "";
 
         document.getElementById("decision1").onclick = () => { gameInit(6); }
         document.getElementById("decision2").onclick = () => { gameInit(5); }
 
     } else if (scene === 4) {
         // Show/hide buttons
-        document.getElementById("decision0").style.display = "none";
         document.getElementById("decision1").style.display = "none";
         document.getElementById("decision2").style.display = "block";
         document.getElementById("decision3").style.display = "block";
@@ -73,7 +68,6 @@ const gameInit = (scene) => {
         document.getElementById("decision3").onclick = () => { gameInit(1); }
     } else if (scene === 5) {
         // Show/hide buttons
-        document.getElementById("decision0").style.display = "none";
         document.getElementById("decision1").style.display = "block";
         document.getElementById("decision2").style.display = "block";
         document.getElementById("decision3").style.display = "none";
@@ -88,7 +82,6 @@ const gameInit = (scene) => {
         document.getElementById("decision2").onclick = () => { gameInit(100); }
     } else if (scene === 6) {
         // Show/hide buttons
-        document.getElementById("decision0").style.display = "none";
         document.getElementById("decision1").style.display = "block";
         document.getElementById("decision2").style.display = "none";
         document.getElementById("decision3").style.display = "none";
@@ -97,13 +90,10 @@ const gameInit = (scene) => {
         document.getElementById("mainText").textContent = "You jump onto the back of a uicorn and head off into the sunset...";
         // change button text  
         document.getElementById("decision1").textContent = "Continue";
-        document.getElementById("decision2").textContent = "";
-        document.getElementById("decision3").textContent = "";
 
         document.getElementById("decision1").onclick = () => { gameInit(7); }
     } else if (scene === 7) {
         // Show/hide buttons
-        document.getElementById("decision0").style.display = "none";
         document.getElementById("decision1").style.display = "block";
         document.getElementById("decision2").style.display = "block";
         document.getElementById("decision3").style.display = "none";
@@ -113,13 +103,11 @@ const gameInit = (scene) => {
         // change button text  
         document.getElementById("decision1").textContent = "Go around";
         document.getElementById("decision2").textContent = "Enter the wood";
-        document.getElementById("decision3").textContent = "";
 
         document.getElementById("decision1").onclick = () => { gameInit(8); }
         document.getElementById("decision2").onclick = () => { gameInit(9); }
     } else if (scene === 8) {
         // Show/hide buttons
-        document.getElementById("decision0").style.display = "none";
         document.getElementById("decision1").style.display = "block";
         document.getElementById("decision2").style.display = "none";
         document.getElementById("decision3").style.display = "none";
@@ -131,7 +119,6 @@ const gameInit = (scene) => {
         document.getElementById("decision1").onclick = () => { gameInit(1); }
     } else if (scene === 9) {
         // Show/hide buttons
-        document.getElementById("decision0").style.display = "none";
         document.getElementById("decision1").style.display = "block";
         document.getElementById("decision2").style.display = "block";
         document.getElementById("decision3").style.display = "none";
@@ -146,7 +133,6 @@ const gameInit = (scene) => {
         document.getElementById("decision2").onclick = () => { gameInit(11); }
     } else if (scene === 10) {
         // Show/hide buttons
-        document.getElementById("decision0").style.display = "none";
         document.getElementById("decision1").style.display = "block";
         document.getElementById("decision2").style.display = "none";
         document.getElementById("decision3").style.display = "none";
@@ -157,8 +143,7 @@ const gameInit = (scene) => {
         document.getElementById("decision1").textContent = "Start a new day";
         document.getElementById("decision1").onclick = () => { gameInit(1); }
     } else if (scene === 11) {
-        // Show/hide buttons
-        document.getElementById("decision0").style.display = "none";
+        // Show/hide buttons";
         document.getElementById("decision1").style.display = "block";
         document.getElementById("decision2").style.display = "none";
         document.getElementById("decision3").style.display = "none";
@@ -167,13 +152,10 @@ const gameInit = (scene) => {
         document.getElementById("mainText").textContent = "You find the end of the woods. Turns out, it was really skinny in the middle! Imagine if you had decided to go around...";
         // change button text  
         document.getElementById("decision1").textContent = "Continue";
-        document.getElementById("decision2").textContent = "";
-        document.getElementById("decision3").textContent = "";
 
         document.getElementById("decision1").onclick = () => { gameInit(12); }
     } else if (scene === 12) {
         // Show/hide buttons
-        document.getElementById("decision0").style.display = "none";
         document.getElementById("decision1").style.display = "block";
         document.getElementById("decision2").style.display = "block";
         document.getElementById("decision3").style.display = "none";
@@ -188,7 +170,6 @@ const gameInit = (scene) => {
         document.getElementById("decision2").onclick = () => { gameInit(13); }
     } else if (scene === 13) {
         // Show/hide buttons
-        document.getElementById("decision0").style.display = "none";
         document.getElementById("decision1").style.display = "block";
         document.getElementById("decision2").style.display = "none";
         document.getElementById("decision3").style.display = "none";
@@ -197,25 +178,20 @@ const gameInit = (scene) => {
         document.getElementById("mainText").textContent = "You followed the king. You live hapily ever after";
         // change button text  
         document.getElementById("decision1").textContent = "Start again?";
-        document.getElementById("decision2").textContent = "";
-        document.getElementById("decision3").textContent = "";
 
         document.getElementById("decision1").onclick = () => { gameInit(1); }
     } else if (scene === 100) {
         // Show/hide buttons
-        document.getElementById("decision0").style.display = "block";
-        document.getElementById("decision1").style.display = "none";
+        document.getElementById("decision1").style.display = "block";
         document.getElementById("decision2").style.display = "none";
         document.getElementById("decision3").style.display = "none";
         // Change page text
         document.getElementById("headerText").textContent = "The End."
-        document.getElementById("mainText").textContent = "";
         // change button text  
-        document.getElementById("decision0").textContent = "Restart";
+        document.getElementById("decision1").textContent = "Restart";
 
         document.getElementById("decision1").onclick = () => { gameInit(1); }
     } else {
-        document.getElementById("decision0").style.display = "none";
         document.getElementById("decision1").style.display = "none";
         document.getElementById("decision2").style.display = "none";
         document.getElementById("decision3").style.display = "none";
