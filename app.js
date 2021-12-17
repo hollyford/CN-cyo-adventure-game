@@ -93,7 +93,7 @@ const gameInit = (scene) => {
         document.getElementById("sceneImg").src = "./images/unicorn.png";
         // Change page text
         document.getElementById("headerText").textContent = "Wooohoooo!";
-        document.getElementById("mainText").textContent = "You jump onto the back of a uicorn and head off into the sunset...";
+        document.getElementById("mainText").textContent = "You jump onto the back of a unicorn and head off into the sunset...";
         // change button text  
         document.getElementById("decision1").textContent = "Continue";
 
