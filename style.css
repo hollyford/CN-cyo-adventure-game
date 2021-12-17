@@ -17,9 +17,12 @@ body {
 }
 
 .imgContainer {
-    height: 400px;
     width: auto;
     margin-right: 33%;
     margin-left: 33%;
     padding-top: 15px;
+}
+.img-fluid {
+    max-height: 500px;
+    width: auto;
 }
