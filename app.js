@@ -38,8 +38,20 @@ const gameInit = (scene) => {
         document.getElementById("decision2").textContent = "End the game";
 
         document.getElementById("decision1").onclick = () => { gameInit(1); }
-        document.getElementById("decision2").onclick = () => { gameInit(1); }
-        // need to change the above to the scene number of the last page
+        document.getElementById("decision2").onclick = () => { gameInit(100); }
+    } else if (scene === 100) {
+        // Show/hide buttons
+        document.getElementById("decision0").style.display = "block";
+        document.getElementById("decision1").style.display = "none";
+        document.getElementById("decision2").style.display = "none";
+        document.getElementById("decision3").style.display = "none";
+        // Change page text
+        document.getElementById("headerText").textContent = "The End."
+        document.getElementById("mainText").textContent = "";
+        // change button text  
+        document.getElementById("decision0").textContent = "Restart";
+
+        document.getElementById("decision1").onclick = () => { gameInit(1); }
     }
 }
 
