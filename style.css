@@ -16,18 +16,20 @@ body {
     padding-bottom: 20px;
 }
 
-#inputBox {
-    margin: 15px;
-}
-
 .imgContainer {
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    height: 400px;
+    width: auto;
+    margin-right: 33%;
+    margin-left: 33%;
+    padding-top: 15px;
 }
 
-#mainImg {
+/* #mainImg {
     height: 250px;
     width: 250px;
     padding: 20px;
-}
+} */
+/* 
+button {
+    display: inline;
+} */
